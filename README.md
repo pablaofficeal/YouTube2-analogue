@@ -5,7 +5,7 @@
 Как использовать мой проект:
 
 Вам нужно 
-- Установить Python
+- Установить Python -V { 3,12,9 }
 - Установить необходимые библиотеки (
 ```
 pip install flask
@@ -18,7 +18,12 @@ pip install flask_login
 ```
 )
 
-Запуск в терменале 
+Запуск кода в терминале/командной строке:
 ```
 python3 app.py
+```
+
+Мы этот проект писали на стриме на YouTube:
+```
+https://youtube.com/live/RiXmMTFoyk0?feature=share
 ```
