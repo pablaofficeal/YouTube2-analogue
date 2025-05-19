@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* Общие стили */
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 40px;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #00000066;
+}
+
+/* Заголовок и шаги */
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.steps {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.steps .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #555;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.steps .dot.active {
+  background: #fff;
+}
+
+/* Метки */
+label {
+  display: block;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #ccc;
+}
+
+.required {
+  font-size: 12px;
+  color: #888;
+}
+
+/* Инпуты */
+input[type="text"],
+input[type="file"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border: none;
+  border-bottom: 2px solid #444;
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="file"]:focus,
+textarea:focus {
+  outline: none;
+  border-bottom: 2px solid #1e90ff;
+}
+
+/* Счётчик символов */
+.char-count {
+  font-size: 12px;
+  color: #777;
+  margin-top: 4px;
+}
+
+/* Кнопка */
+.submit-btn {
+  margin-top: 30px;
+  width: 100%;
+  padding: 12px;
+  background: #1e90ff;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #1a75d2;
+  cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+  <h1>Загрузка видео</h1>
+
+  <div class="steps">Информация <span class="dot active"></span> → Дополнения <span class="dot"></span> → Проверка</div>
+
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    
+    <label for="title">Название <span class="required">(обязательное поле)</span></label>
+    <input type="text" id="title" name="title" maxlength="100" required>
+    <div class="char-count">0/100</div>
+
+    <label for="description">Описание</label>
+    <textarea id="description" name="description" rows="5" placeholder="Расскажите, о чём ваше видео..."></textarea>
+
+    <label for="video_file">Выберите видео</label>
+   <input type="file" id="video_file" name="video_file" accept="video/*">
+
+    <label for="image_file">Обложка (необязательно)</label>
+    <input type="file" id="image_file" name="image_file" accept="image/*">
+
+    <input type="submit" value="Загрузить видео" class="submit-btn">
+  </form>
+</div>
+</body>
+</html>
