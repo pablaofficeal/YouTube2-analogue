@@ -44,9 +44,17 @@ Free59/
 │   ├── index.html
 │   ├── upload.html
 │   └── watch.html
+├── uploads/
+│   ├── images/
+│   └── videos/
+│       ├── mp4/
+│       └── video_2025-04-01_22-12-55.mp4
+├── .env
 ├── .gitignore
 ├── all_imports.py
 ├── app.py
+├── config.py
+├── database.db
 ├── extensions.py
 ├── main_router.py
 └── README.md
