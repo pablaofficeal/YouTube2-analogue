@@ -4,6 +4,21 @@
 
 Как использовать мой проект:
 
-Запуск в терменале ```
+Вам нужно 
+- Установить Python
+- Установить необходимые библиотеки (
+```
+pip install flask
+```
+```
+pip install flask_sqlalchemy
+```
+```
+pip install flask_login
+```
+)
+
+Запуск в терменале 
+```
 python3 app.py
 ```
