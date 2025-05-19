@@ -24,8 +24,6 @@ python3 app.py
 📁 Структура проекта
 ```markdown
 Free59/
-├── logs/
-│   └── server.log
 ├── models/
 │   ├── main_start_db.py
 │   ├── users/
@@ -46,36 +44,28 @@ Free59/
 │   ├── index.html
 │   ├── upload.html
 │   └── watch.html
-├── uploads/
-│   ├── images/
-│   └── videos/
-│       ├── mp4/
-│       └── video_2025-04-01_22-12-55.mp4
-├── .env
 ├── .gitignore
 ├── all_imports.py
 ├── app.py
-├── config.py
-├── database.db
 ├── extensions.py
 ├── main_router.py
 └── README.md
 ```
 
 ✅ Что реализовано
--База данных на SQLAlchemy
+- База данных на SQLAlchemy
 
--Модели пользователей и видео
+- Модели пользователей и видео
 
--Авторизация с Flask-Login
+- Авторизация с Flask-Login
 
--Формы загрузки и отображения видео
+- Формы загрузки и отображения видео
 
--Подключённые стили для фронта
+- Подключённые стили для фронта
 
--Роутинг с разными модулями Flask
+- Роутинг с разными модулями Flask
 
--Стриминг и отображение видеофайлов
+- Стриминг и отображение видеофайлов
 
 
 🔴 YouTube стрим
