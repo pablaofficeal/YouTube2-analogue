@@ -4,3 +4,4 @@
 *pyc
 *uploads
 *.env
+*database.db

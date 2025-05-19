@@ -17,6 +17,9 @@ app.register_blueprint(host)
 # Database initialization
 db.init_app(app)
 
+with app.app_context():
+    db.create_all()
+
 logging.basicConfig(
     filename='logs/server.log', 
     level=logging.INFO,
