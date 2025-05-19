@@ -1,9 +1,9 @@
 from all_imports import *
 from main_router import *
 
+
 if not os.path.exists('logs'):
     os.makedirs('logs')
-    
 
 app = Flask(__name__)
 
@@ -12,6 +12,9 @@ app.config.from_object(Config)
 
 # Registering blueprints
 app.register_blueprint(host)
+
+# Database initialization
+db.init_app(app)
 
 logging.basicConfig(
     filename='logs/server.log', 
