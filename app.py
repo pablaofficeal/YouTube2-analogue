@@ -1,5 +1,6 @@
 from all_imports import *
 from main_router import *
+from extensions import db
 
 
 if not os.path.exists('logs'):
